@@ -1,0 +1,8 @@
+<div *ngIf="course">
+    <h1>{{ course.description }}</h1>
+    <img [src]="course.image" alt="{{ course.description }}" />
+    <p>Lessons: {{ course.lessonsCount }}</p>
+    <p>Category: {{ course.category }}</p> <!-- Adjust if necessary -->
+    <a routerLink="/">Back to Courses</a>
+  </div>
+  

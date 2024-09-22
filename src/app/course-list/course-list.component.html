@@ -1,0 +1,9 @@
+<div class="course-list">
+    <div *ngFor="let course of courses" class="course-card">
+      <img [src]="course.image" alt="{{ course.description }}" />
+      <h2>{{ course.description }}</h2>
+      <p>Lessons: {{ course.lessonsCount }}</p>
+      <button (click)="viewCourse(course)">View Course</button>
+    </div>
+  </div>
+  
